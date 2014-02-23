@@ -46,12 +46,6 @@ class Toro
             }
         }
 
-	    if (strpos($discovered_handler, '@')) {
-		    $position = strpos($discovered_handler, '@');
-		    $request_method = substr($discovered_handler, $position + 1);
-		    $discovered_handler = substr($discovered_handler, 0, $position);
-	    }
-
         $result = null;
 
         $handler_instance = null;
